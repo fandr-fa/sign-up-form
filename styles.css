@@ -1,0 +1,82 @@
+/*
+* {
+    border: 1px solid blue;
+}
+*/
+.form-row {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row input {
+    width: 250px;
+    height: initial;
+}
+
+.form-row label {
+    width: 250px;
+    margin-top: 7px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content {
+    display: flex;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.create-account {
+    background-color: #596D48;
+    color: white;
+    padding: 16px 48px;
+    border-radius: 8px;
+    border: none;
+    /* margin-left: 16px; */
+}
+
+fieldset {
+    border: 0px;
+    padding: 0px;
+}
+
+form {
+    background-color: white;
+    /* padding-top: 16px;
+    padding-bottom: 16px; */
+}
+
+.right {
+    background-color: #d5d5e6;
+}
+
+input {
+    border: 0.5px solid #e9e9f2;
+    border-radius: 4px;
+}
+
+input:focus {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    outline: solid 1px #7f7fb4;
+}
+
+.pwd:invalid {
+    border: 1px solid red;
+}
+
+.error {
+    border: 1px solid red;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Sign Up Form</title>
+</head>
+
+<body>
+    <div class="content">
+
+        <div class="left">
+            <img src="img/background.avif" alt="Background Image">
+        </div>
+        <div class="right">
+            <div>
+                This is not a real online service! You know you need something like this in your life to help you
+                realize your deepest dreams.
+                Sign up <em>now</em> to get started.
+
+                You <em>know</em> you want to.
+            </div>
+            <form action="127.0.0.1/submit" type="POST">
+                <fieldset>
+                    <legend>Let's do this!</legend>
+                    <div class="form-row">
+                        <div class="form-column">
+                            <label for="name">FIRST NAME</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-column">
+                            <label for="lastname">LAST NAME</label>
+                            <input type="text" id="lastname" name="lastname" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-column">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="name" name="email" required>
+                        </div>
+                        <div class="form-column">
+                            <label for="name">PHONE NUMBER</label>
+                            <input type="tel" id="phonenumber" name="phonenumber" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-column">
+                            <label for="email">PASSWORD</label>
+                            <input type="password" id="password" class="pwd" name="password" oninput="checkPassword()" required>
+                        </div>
+                        <div class="form-column">
+                            <label for="name">CONFIRM PASSWORD</label>
+                            <input type="password" id="password-confirm" class="pwd" name="password-confirm" oninput="checkPassword()" required>
+                        </div>
+                    </div>
+                    <div id="password-error">Password don't much</div>
+                </fieldset>
+
+                <button type="submit" class="create-account">Create Account</button>
+            </form>
+            Already have an account? <a href="">Log in</a>
+        </div>
+    </div>
+</body>
+
+</html>
