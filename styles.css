@@ -1,13 +1,50 @@
-/*
-* {
+a {
+    text-decoration: none;
+}
+
+.content {
+    display: flex;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.form > * {
     border: 1px solid blue;
 }
-*/
+
+.form-header, .form-footer {
+    flex: 1;
+}
+
+.form-section {
+    padding-left: 30px;
+    border: 1px solid orange;
+}
+
+.form-section.form-header {
+    padding-bottom: 64px;
+    padding-right: 128px;
+}
+
+.form-section.form-data {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.form-section.form-footer {
+    padding-top: 20px;
+}
+
 .form-row {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    gap: 30px;
+    column-gap: 30px;
+    row-gap: 5px;
 }
 
 .form-column {
@@ -25,27 +62,17 @@
     margin-top: 7px;
 }
 
-a {
-    text-decoration: none;
-}
-
-.content {
+.form-header {
     display: flex;
+    align-items: flex-end;
 }
 
-.right {
+.form-data {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.create-account {
-    background-color: #596D48;
-    color: white;
-    padding: 16px 48px;
-    border-radius: 8px;
-    border: none;
-    /* margin-left: 16px; */
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 fieldset {
@@ -53,14 +80,9 @@ fieldset {
     padding: 0px;
 }
 
-form {
-    background-color: white;
-    /* padding-top: 16px;
-    padding-bottom: 16px; */
-}
-
-.right {
-    background-color: #d5d5e6;
+legend {
+    font-size: 24px;
+    padding-bottom: 10px;
 }
 
 input {
@@ -79,4 +101,12 @@ input:focus {
 
 .error {
     border: 1px solid red;
+}
+
+.create-account {
+    background-color: #596D48;
+    color: white;
+    padding: 16px 48px;
+    border-radius: 8px;
+    border: none;
 }
