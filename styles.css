@@ -1,3 +1,8 @@
+@font-face {
+    font-family: NordBold;
+    src: url(https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf);
+  }
+
 a {
     text-decoration: none;
 }
@@ -20,13 +25,18 @@ a {
     flex: 1;
 }
 
+.form-header {
+    font-size: 18px;
+    font-weight: 600;
+}
+
 .form-section {
     padding-left: 30px;
     border: 1px solid orange;
 }
 
 .form-section.form-header {
-    padding-bottom: 64px;
+    padding-bottom: 48px;
     padding-right: 128px;
 }
 
@@ -90,6 +100,11 @@ input {
     border-radius: 4px;
 }
 
+label {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 12px;
+}
+
 input:focus {
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     outline: solid 1px #7f7fb4;
@@ -109,4 +124,8 @@ input:focus {
     padding: 16px 48px;
     border-radius: 8px;
     border: none;
+}
+
+#password-error {
+    color: red;
 }
