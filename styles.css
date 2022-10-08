@@ -15,11 +15,14 @@ a {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    flex-grow: 1;
 }
 
+/*
 .form > * {
     border: 1px solid blue;
 }
+*/
 
 .form-header, .form-footer {
     flex: 1;
@@ -32,7 +35,7 @@ a {
 
 .form-section {
     padding-left: 30px;
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
 }
 
 .form-section.form-header {
@@ -77,12 +80,14 @@ a {
     align-items: flex-end;
 }
 
+.form-header, .form-footer {
+    background-color: #ecf3f5;
+}
+
 .form-data {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 32px;
-    margin-bottom: 32px;
 }
 
 fieldset {
