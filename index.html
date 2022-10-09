@@ -10,69 +10,73 @@
 
 <body>
     <div class="content">
-
-        <div class="left">
-            <img src="img/background.avif" alt="Background Image">
+        <div class="content-logo">
+            <div class="logo-header">
+                <img src="img/logo.png" alt="Logo" class="logo-image">
+                <p class="logo-text">ODIN</p>
+            </div>
+            <div class="logo-footer">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a></div>
         </div>
 
-        <form class='form' action="127.0.0.1/submit" type="POST">
-            <div class='form-section form-header'>
-                <div>
-                    This is not a real online service! You know you need something like this in your life to help you
-                    realize your deepest dreams.
-                    <br>
-                    Sign up <em>now</em> to get started.
-                    <br>
-                    <br>
-                    You <em>know</em> you want to.
+            <form class='form' action="127.0.0.1/submit" type="POST">
+                <div class='form-section form-header'>
+                    <div>
+                        This is not a real online service! You know you need something like this in your life to help you
+                        realize your deepest dreams.
+                        <br>
+                        Sign up <em>now</em> to get started.
+                        <br>
+                        <br>
+                        You <em>know</em> you want to.
+                    </div>
                 </div>
-            </div>
 
-            <div class='form-section form-data'>
-                <fieldset>
-                    <legend>Let's do this!</legend>
-                    <div class="form-row">
-                        <div class="form-column">
-                            <label for="name">FIRST NAME</label>
-                            <input type="text" id="name" name="name" required>
+                <div class='form-section form-data'>
+                    <fieldset>
+                        <legend>Let's do this!</legend>
+                        <div class="form-row">
+                            <div class="form-column">
+                                <label for="name">FIRST NAME</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-column">
+                                <label for="lastname">LAST NAME</label>
+                                <input type="text" id="lastname" name="lastname" required>
+                            </div>
                         </div>
-                        <div class="form-column">
-                            <label for="lastname">LAST NAME</label>
-                            <input type="text" id="lastname" name="lastname" required>
+                        <div class="form-row">
+                            <div class="form-column">
+                                <label for="email">EMAIL</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-column">
+                                <label for="phonenumber">PHONE NUMBER</label>
+                                <input type="tel" id="phonenumber" name="phonenumber" required>
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-column">
-                            <label for="email">EMAIL</label>
-                            <input type="email" id="email" name="email" required>
+                        <div class="form-row">
+                            <div class="form-column">
+                                <label for="password">PASSWORD</label>
+                                <input type="password" id="password" class="pwd" name="password" oninput="checkPassword()"
+                                    required>
+                            </div>
+                            <div class="form-column">
+                                <label for="password-confirm">CONFIRM PASSWORD</label>
+                                <input type="password" id="password-confirm" class="pwd" name="password-confirm"
+                                    oninput="checkPassword()" required>
+                            </div>
                         </div>
-                        <div class="form-column">
-                            <label for="phonenumber">PHONE NUMBER</label>
-                            <input type="tel" id="phonenumber" name="phonenumber" required>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-column">
-                            <label for="password">PASSWORD</label>
-                            <input type="password" id="password" class="pwd" name="password" oninput="checkPassword()"
-                                required>
-                        </div>
-                        <div class="form-column">
-                            <label for="password-confirm">CONFIRM PASSWORD</label>
-                            <input type="password" id="password-confirm" class="pwd" name="password-confirm"
-                                oninput="checkPassword()" required>
-                        </div>
-                    </div>
-                    <div id="password-error">*Passwords don't much</div>
-                </fieldset>
-            </div>
+                        <div id="password-error">*Passwords don't match</div>
+                    </fieldset>
+                </div>
 
-            <div class="form-section form-footer">
-                <button type="submit" class="create-account">Create Account</button>
-                <p>Already have an account? <a href="">Log in</a></p>
-            </div>
+                <div class="form-section form-footer">
+                    <button type="submit" class="create-account">Create Account</button>
+                    <p>Already have an account? <a href="">Log in</a></p>
+                </div>
 
-        </form>
+            </form>
+
     </div>
 </body>
 

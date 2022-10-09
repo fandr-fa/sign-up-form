@@ -1,71 +1,27 @@
 @font-face {
     font-family: NordBold;
     src: url(https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf);
-}
+  }
 
-html, body {
-    padding: 0px;
-    margin: 0px;
+a {
+    text-decoration: none;
 }
 
 .content {
     display: flex;
-    min-height: 100vh;
 }
-
-.content-image {
-    flex: 3;
-}
-
-.content-logo {
-    background-position: center center;
-    background-image: url(img/background.jpg);
-    background-size: cover;
-    flex: 3;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    color: white;
-}
-
-.logo-header {
-    height: 64px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    margin-top: 128px;
-}
-
-.logo-image {
-    max-width: 64px;
-}
-
-.logo-text {
-    margin: 0px;
-    padding: 0px;
-    font-family: NordBold;
-    display: flex;
-    align-items: center;
-    height: 100%;
-    font-size: 48px;
-}
-
-.logo-footer {
-    text-align: center;
-}
-
-.logo-footer a {
-    color: white;
-}
-
 
 .form {
     display: flex;
     flex-direction: column;
-    flex: 5;
+    flex-grow: 1;
 }
 
+/*
+.form > * {
+    border: 1px solid blue;
+}
+*/
 
 .form-header, .form-footer {
     flex: 1;
@@ -78,6 +34,7 @@ html, body {
 
 .form-section {
     padding-left: 30px;
+    /* border: 1px solid orange; */
 }
 
 .form-section.form-header {
@@ -126,6 +83,17 @@ html, body {
     background-color: #ecf3f5;
 }
 
+.form-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+fieldset {
+    border: 0px;
+    padding: 0px;
+}
+
 legend {
     font-size: 24px;
     padding-bottom: 10px;
@@ -171,4 +139,13 @@ input:focus {
     bottom: 0;
     left: 0;
     width: inherit;
+}
+
+img {
+    height: 100vh;
+}
+
+html, body {
+    padding: 0px;
+    margin: 0px;
 }
